@@ -1,0 +1,280 @@
+$bg_nav: #efd09a;
+$c1: #838637;
+$c2: #1f3646;
+$c3: #9193AC;
+$bg_footer: #d5ba8b;
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body{
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  font-family: 'Shadows Into Light', cursive;
+  background: $bg_nav;
+  height:1000px;
+  
+}
+
+.first-page{
+  
+  height:100%;
+  background: $bg_nav;
+  
+}
+
+
+.first-menu{
+  position: relative;  
+  top: 100px;
+    
+  li{
+    text-align:center;
+    color: $c2;
+    font-size: 28px;
+    a{
+      color: $c2;
+    }
+  }
+}
+
+.first-title{
+  position: relative;
+  top: 80px;
+  h1{
+    text-align: center;
+    color: $c2;
+    font-size: 72px;
+    animation: 2.3s ease-out 0s 1 slideInFromLeft;
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 5px;
+    margin: -5px auto;
+    background-color: $c2;
+    
+  }
+}
+
+.second-title{
+  position: relative;
+  top: 80px;
+  h1{
+    text-align: center;
+    color: $c2;
+    font-size: 48px;
+    animation: 2.8s ease-out 0s 1 slideInFromLeft;
+  }
+}
+
+.big-logo{
+  left: 30px;
+  position: relative;
+  top: 80px;
+  height:100%;
+}
+
+
+.small-logo{
+  padding-left: 190px;
+}
+
+.img-projeto{
+  padding-left:-15px;
+  padding-right:-15px;
+  width:100%;
+  max-width:100%;
+  object-fit: cover;
+  background-color: black;
+}
+
+.bg-navbar{
+  background: $bg_nav;
+  transition: 0.5s ease;
+}
+
+.nav{
+  position:relative;
+  right: 200px;
+}
+
+.nav-link{
+  font-size: 14px;
+  margin-left: 20px;
+  font-family: Arial;
+  color: $c2;
+}
+
+.carousel{
+  margin-right: -15px;
+  margin-left: -15px;
+  top: 80px;
+  
+  
+}
+
+.d-block{
+  background-position: center;
+}
+
+.third-page{
+  text-align: center;
+  height:100%;
+  width:100%;
+  background-color: $c1;
+  padding-top: 160px;
+  padding-left: 220px;
+  padding-right: 220px;
+  color: whitesmoke;
+  
+  h1{
+    font-size: 72px;
+    &::after{
+      content: "";
+      display: block;
+      width: 5%;
+      height: 5px;
+      margin: 10px auto;
+      background-color: whitesmoke;
+      margin-bottom: 60px;
+    }
+   
+  }
+  p{
+    font-family: arial;
+    font-size: 28px;
+  }
+}
+
+.form-contato{
+  height:100%;
+  width:100%;
+  background-color: $c3;
+  padding-top: 80px;  
+  text-align:center;
+  h1{
+    font-size: 72px;
+    &::after{
+      content: "";
+      display: block;
+      width: 5%;
+      height: 5px;
+      margin: 10px auto;
+      background-color: $c2;
+      margin-bottom: 60px;
+    }
+  }
+  form{
+    position:relative;
+    margin-left:10%;
+    h5{
+      text-align: initial;
+      font-family:Arial;
+    }
+  }
+  .separator-vert{
+    content:"";
+    display:block;
+    width:2px;
+    height: 40%;
+    position:absolute;
+    left:50%;
+    top:15%;
+    background-color: $c2;
+  }
+  .separator-hor{
+    content:"";
+    display:block;
+    height:2px;
+    width: 15%;
+    position:absolute;
+    left:50%;
+    top:35%;
+    background-color: $c2;
+  }
+}
+.sticky-top{
+  position:fixed;
+}
+
+.navbar{
+  background-color: $bg_nav;
+  width: 100%;
+  transition: 0.5s ease;
+  
+}
+
+.col-3{
+  padding-left:0px;
+  padding-right:0px;
+  background-color:black;
+  
+}
+
+.projetos .row{
+  padding-top: 80px;
+}
+
+.text-projeto{
+  color:white;
+  position:absolute;
+  opacity: 0;
+  
+  top:50%;
+  left:50%;
+  transition: 0.5s ease-in-out;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.projeto:hover{ 
+  img{
+  opacity:0.3;    
+  }
+  .text-projeto{
+  
+    opacity:1;
+    color: whitesmoke;
+  
+}
+}
+
+.dados{
+  display:block;
+  position: absolute;
+  top:10%;
+  left:50%;
+  text-align: start;
+  font-family: Arial;
+}
+.redes-sociais{
+  display:block;
+  bottom: -85%;
+  position: absolute;
+}
+
+footer{
+  background-color:$bg_footer;
+  height: 100px;
+  text-align: center;
+  font-family: arial;
+  padding-top:20px;
+}
+
+.enviar{
+  position:relative;
+  top: 10px;
+  left: 15px;
+  font-family: Arial;
+  font-size: 24px;
+}

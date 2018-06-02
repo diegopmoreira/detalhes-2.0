@@ -1,1 +1,1 @@
-detalhes-2.0
+detalhes 2.0
