@@ -64,9 +64,18 @@ $(document).ready(function () {
     });
 
   });
+  $('.slider').slick();
 
 
+  $('.projeto').click(function(){
+    let src_img = $(this).find('img').attr('src');
+    src_img = src_img.split('imagem');
+    
+    $('.img-1 img').attr('src',src_img[0]+'imagem1.jpg');
+    $('.img-2 img').attr('src',src_img[0]+'imagem2.jpg');
+    $('.img-3 img').attr('src',src_img[0]+'imagem3.jpg');
+    $('.img-4 img').attr('src',src_img[0]+'imagem4.jpg');
 
-
+  });
 });
 
