@@ -116,6 +116,11 @@ body{
   margin-left: 20px;
   font-family: Arial;
   color: $c2;
+  border-radius: 15%;
+}
+.navbar img{
+  border-radius: 15%;
+  padding: 5px;
 }
 
 
@@ -127,7 +132,7 @@ body{
 
 .extra-page{
   text-align: center;
-  height:80vh;
+  height:80%;
   width:100%;
   background-color: grey;
   h1{
@@ -167,9 +172,9 @@ body{
   height:100%;
   width:100%;
   background-color: $c1;
-  padding-top: 160px;
-  padding-left: 220px;
-  padding-right: 220px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
   color: whitesmoke;
   
   h1{
@@ -283,7 +288,14 @@ body{
   
 }
 }
+form{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.redes{
+  position: relative;
+  top: 60px;
+}
 .dados{
   display:block;
   position: absolute;
@@ -295,7 +307,7 @@ body{
 .redes-sociais{
   display:block;
   bottom: -85%;
-  position: absolute;
+  position: relative;
 }
 
 footer{
@@ -312,4 +324,21 @@ footer{
   left: 15px;
   font-family: Arial;
   font-size: 24px;
+}
+
+.face{
+  
+  display: inline-block;
+  svg{
+    width: 60px;
+  }
+}
+
+.insta{
+  
+ 
+  display: inline-block;
+  svg{
+    width: 60px;
+  }
 }
